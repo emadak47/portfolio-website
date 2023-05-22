@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Layout from '@/components/Layout';
 import Animated from '@/components/AnimatedText';
+import Skills from '@/components/Skills';
 import profilePic from '../../public/next.svg';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 
@@ -80,6 +81,7 @@ const about = () => {
                         </div>
                     </div>
 
+                <Skills />
                 </Layout>
             </main>
         </>
