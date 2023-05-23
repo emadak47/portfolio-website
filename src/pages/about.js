@@ -6,6 +6,8 @@ import Animated from '@/components/AnimatedText';
 import Skills from '@/components/Skills';
 import profilePic from '../../public/next.svg';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
+import Experience from '@/components/Experience';
+import Education from '@/components/Education';
 
 const AnimatedNumbers = ({ value }) => {
     const ref = useRef(null);
@@ -82,6 +84,8 @@ const about = () => {
                     </div>
 
                 <Skills />
+                <Experience />
+                <Education />
                 </Layout>
             </main>
         </>
