@@ -14,10 +14,10 @@ const Project = ({ type, title, img, link, github }) => {
         <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light ">
             <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light" />
             <Link href={link} target="_blank" className="w-full cursor-pointer overflow-hidden rounded-lg">
-                <FramerImage 
-                    src={img} 
-                    alt={title} 
-                    className="w-full h-auto" 
+                <FramerImage
+                    src={img}
+                    alt={title}
+                    className="w-full h-auto"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.5 }}
                 />
@@ -43,12 +43,16 @@ const FeatureProject = ({ type, title, summary, img, link, github }) => {
         >
             <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light" />
             <Link href={link} target="_blank" className="w-1/2 cursor-pointer overflow-hidden rounded-lg">
-                <FramerImage 
-                    src={img} 
-                    alt={title} 
-                    className="w-full h-auto" 
+                <FramerImage
+                    src={img}
+                    alt={title}
+                    className="w-full h-auto"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.5 }}
+                    priority
+                    sizes="(max-width: 768px) 100vw,
+                           (max-width: 1200px) 50vw,
+                           50vw"
                 />
             </Link>
 
