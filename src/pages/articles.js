@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import article1 from '../../public/vercel.svg';
 import { motion, useMotionValue } from 'framer-motion';
+import TransitionEffect from '@/components/TransitionEffect';
 
 const FramerImage = motion(Image);
 
@@ -92,6 +93,7 @@ const articles = () => {
                 <title>emadak47 | Articles Page</title>
                 <meta name="description" content="any description" />
             </Head>
+            <TransitionEffect />
             <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
                 <Layout className='pt-16'>
                     <Animated text="Placeholder" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl' />
