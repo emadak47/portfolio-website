@@ -43,9 +43,9 @@ const about = () => {
             <TransitionEffect />
             <main className='flex w-full flex-col items-center justify-center dark:text-light'>
                 <Layout className='pt-16'>
-                    <Animated text="Placeholder" className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' />
+                    {/* <Animated text="Exercise Read Code" className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' /> */}
 
-                    <div className='grid w-full grid-cols-8 gap-16'>
+                    {/* <div className='grid w-full grid-cols-8 gap-16'>
                         <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
                             <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
 
@@ -98,11 +98,11 @@ const about = () => {
                                 </h2>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
-                <Skills />
-                <Experience />
-                <Education />
+                    <Experience />
+                    <Education />
+                    <Skills />
                 </Layout>
             </main>
         </>

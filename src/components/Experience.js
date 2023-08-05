@@ -43,7 +43,7 @@ const Experience = () => {
     });
 
     return (
-        <div className='my-64'>
+        <div className='my-12'>
             <h2 className='font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16'>
                 Experience
             </h2>
@@ -56,34 +56,40 @@ const Experience = () => {
                 />
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2 '>
                     <Details
-                        position="XX"
-                        company="XX"
-                        companyLink="XX"
-                        time="xx"
-                        address="xx"
-                        work="long paragraph long paragraph long paragraph long paragraph
-                            long paragraph long paragraph long paragraph long paragraph 
-                            long paragraph long paragraph long paragraph long paragraph "
+                        position="Quantitative Trader & Developer"
+                        company="Stealth Startup"
+                        companyLink=""
+                        time="Jun 2023 - Present"
+                        address="Hong Kong SAR"
+                        work="Building a fully fledged high-frequency trading systems"
                     />
                     <Details
-                        position="XX"
-                        company="XX"
-                        companyLink="XX"
-                        time="xx"
-                        address="xx"
-                        work="long paragraph long paragraph long paragraph long paragraph
-                            long paragraph long paragraph long paragraph long paragraph 
-                            long paragraph long paragraph long paragraph long paragraph "
+                        position="Quantitative Developer Intern"
+                        company="TPS Capital"
+                        companyLink="https://www.tpscap.com"
+                        time="Jun 2022 - Sep 2022"
+                        address="Hong Kong SAR"
+                        work="Contributed to a single token market making strategy by building back-end interfaces for CEXs as well as DEXs on Solana and Ethereum.
+                              Also, Co-developed an algorithmic currency premium mean-reversion strategy and wrote back-tests"
                     />
                     <Details
-                        position="XX"
-                        company="XX"
-                        companyLink="XX"
-                        time="xx"
-                        address="xx"
-                        work="long paragraph long paragraph long paragraph long paragraph
-                            long paragraph long paragraph long paragraph long paragraph 
-                            long paragraph long paragraph long paragraph long paragraph "
+                        position="Blockchain Developer Intern"
+                        company="Convergence Finance"
+                        companyLink="https://conv.finance"
+                        time="Sep 2021 - Feb 2022"
+                        address="Hong Kong SAR"
+                        work="Changed IDO offerings’ whitelisting from on-chain to off-chain approval via EIP712 signatures. 
+                              Also, Conducted technical analysis of the Compound protocol."
+                    />
+                    <Details
+                        position="Software Developer Intern"
+                        company="Liquefy Limited"
+                        companyLink="https://liquefy.com"
+                        time="Jun 2021 - Sep 2021"
+                        address="Hong Kong SAR"
+                        work="Developed a smart contract that uses ChainLink’s on-chain VRF to randomly select addresses from an eligible pool for 
+                              whitelisting prior to an IDO offering. Also, Conducted technical research on AMMs such as Uniswap v2 & v3, Curve, Balancer, 
+                              as well as a PMM such as DODO."
                     />
                 </ul>
             </div>

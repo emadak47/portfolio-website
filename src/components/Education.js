@@ -29,13 +29,13 @@ const Details = ({ type, time, place, info }) => {
 
 const Education = () => {
     const ref = useRef(null);
-    const { scorllYProgress } = useScroll({
+    const { scrollYProgress } = useScroll({
         target: ref,
         offset: ["start end", "center start"]
     });
 
     return (
-        <div className='my-64'>
+        <div className='mt-36'>
             <h2 className='font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16'>
                 Education
             </h2>
@@ -44,32 +44,22 @@ const Education = () => {
                 <motion.div
                     className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light 
                                md:w-[2px] md:left-[30px] xs:left-[20px]'
-                    style={{ scaleY: scorllYProgress }}
+                    style={{ scaleY: scrollYProgress }}
                 />
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                     <Details
-                        position="XX"
-                        company="XX"
-                        companyLink="XX"
-                        time="xx"
-                        address="xx"
-                        work="xx"
+                        type="Bachelor of Arts & Sciences in Applied Artificial Intelligence"
+                        time="2019-2023"
+                        place="The University of Hong Kong"
+                        info="Major in AI with concentration in Finance. Relevant courses include Financial Calculus, 
+                              Optimisation Theory, Statistical Machine Learning, Time Series Analysis, Advanced Algorithm Desing and Analysis"
                     />
                     <Details
-                        position="YY"
-                        company="YY"
-                        companyLink="YY"
-                        time="yy"
-                        address="yy"
-                        work="yy"
-                    />
-                    <Details
-                        position="ZZ"
-                        company="ZZ"
-                        companyLink="ZZ"
-                        time="zz"
-                        address="zz"
-                        work="zz"
+                        type="Online Learning"
+                        time="Oct 2020 - Jan 2021"
+                        place="Udemy, AlgoExpert, and Hackerrank"
+                        info="Completed coursework in topics like Algorithmic Trading & Quantitative Analysis Using Python, and solved a multitude of 
+                              data structures and algorithm programming questions."
                     />
                 </ul>
             </div>

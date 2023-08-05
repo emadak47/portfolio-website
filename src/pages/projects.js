@@ -92,72 +92,73 @@ const projects = () => {
     return (
         <>
             <Head>
-                <title>emadak47 | Porjects Page</title>
+                <title>emadak47 | Projects Page</title>
                 <meta name="description" content="any description" />
             </Head>
             <TransitionEffect />
             <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
                 <Layout className="pt-16">
                     <Animated 
-                        text="Placeholder" 
+                        text="One Line of Code at a Time" 
                         className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" 
                     />
                     <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
                         <div className="col-span-12">
                             <FeatureProject
-                                type="XX"
-                                title="xxx"
-                                summary="xxxx"
+                                type="Undergraduate Capstone"
+                                title="ML-Based Video Analytics Tool"
+                                summary="Analyze candidates' facial expressions, eye gaze, eye emotions, and audio during a one-way interview scenario like HireVue.
+                                        The application relies on simple statistical tools to compute metrics such as attentiveness, confidence, potential lie, and deep thinking. "
                                 img={project1}
-                                link="/"
-                                github="/"
+                                link="https://github.com/emadak47/AI-video-analytics"
+                                github="https://github.com/emadak47/AI-video-analytics"
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
                             <Project
-                                type="XX"
-                                title="xxx"
+                                type="Reinforcement Learning"
+                                title="Solve LunarLander-V2 Gym Environment"
                                 img={project1}
-                                link="/"
-                                github="/"
+                                link="https://github.com/emadak47/Lunar-Lander/tree/DQN"
+                                github="https://github.com/emadak47/Lunar-Lander/tree/DQN"
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
                             <Project
-                                type="XX"
-                                title=""
+                                type="Web Scrapping"
+                                title="Automate Tasks with Selenium & BeautifulSoup "
                                 img={project1}
-                                link="/"
-                                github="/"
+                                link="https://github.com/emadak47/scrapers"
+                                github="https://github.com/emadak47/scrapers"
                             />
                         </div>
 
                         <div className="col-span-12">
                             <FeatureProject
-                                type="XX"
-                                title=""
-                                summary=""
+                                type="Smart Contract"
+                                title="Pre-IDO Whitelisting: Lucky Draw"
+                                summary="Generate verifiable random numbers on-chain using ChainLink VRF. The numbers are used to select winners from a pool of addresses for a token's pre-IDO whitelisting."
                                 img={project1}
-                                link="/"
-                                github="/"
+                                link="https://github.com/emadak47/vrf-luckydraw"
+                                github="https://github.com/emadak47/vrf-luckydraw"
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
                             <Project
-                                type="XX"
-                                title=""
+                                type="Trading System Component"
+                                title="Liquidity Monitor for Raydium - on-chain orderbook AMM"
                                 img={project1}
-                                link="/"
-                                github="/"
+                                link="https://github.com/emadak47/raydium-liquidity-monitor"
+                                github="https://github.com/emadak47/raydium-liquidity-monitor"
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
                             <Project
-                                type="XX"
-                                title=""
+                                type="Kaggle Competition"
+                                title="Predicting Patients' Mortality & Length of Stay"
                                 img={project1}
-                                link="/"
-                                github="/"
+                                link="https://github.com/emadak47/kaggle-competition/tree/final_submission"
+                                github="https://github.com/emadak47/kaggle-competition/tree/final_submission"
                             />
                         </div>
                     </div>

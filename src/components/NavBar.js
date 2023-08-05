@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import Logo from './Logo';
 import { useRouter } from 'next/router';
-import { DribbbleIcon, GithubIcon, LinkedInIcon, MoonIcon, PinterestIcon, SunIcon, TwitterIcon } from './Icons';
+import { DribbbleIcon, GithubIcon, LinkedInIcon, MoonIcon, PinterestIcon, SpotifyIcon, SunIcon, TwitterIcon } from './Icons';
 import { motion } from 'framer-motion';
 import useThemeSwitcher from './hooks/useThemeSwitcher';
 import { useState } from 'react';
@@ -121,16 +121,10 @@ const NavBar = () => {
                         <LinkedInIcon />
                     </CustomIcon>
                     <CustomIcon
-                        href="/"
+                        href="https://open.spotify.com/user/br1tv9j3o4eqko4s646xh14qz?si=86ef2e3ff9d04a27"
                         className="w-6 mx-3 bg-light rounded-full"
                     >
-                        <PinterestIcon />
-                    </CustomIcon>
-                    <CustomIcon
-                        href="/"
-                        className="w-6 ml-3"
-                    >
-                        <DribbbleIcon />
+                        <SpotifyIcon />
                     </CustomIcon>
 
                     <button

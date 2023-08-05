@@ -21,15 +21,23 @@ const Skill = ({ name, x, y }) => {
 const Skills = () => {
     return (
         <>
-            <h2 className='font-bold text-8xl mt-64 w-full text-center md:text-6xl md:mt-32'>Skills</h2>
+            <h2 className='font-bold text-8xl mt-36 w-full text-center md:text-6xl md:mt-28'>Skills</h2>
             <div className='w-full h-screen relative flex items-center justify-center rounded-full 
                             bg-circularLight dark:bg-circularDark lg:h-[80vh] sm:h-[60vh] xs:h-[50vh]
                             lg:bg-circularLightLg lg:dark:bg-circularDarkLg
                             md:bg-circularLightMd md:dark:bg-circularDarkMd
                             sm:bg-circularLightSm sm:dark:bg-circularDarkSm'>
                                 
-                <Skill name="ML" x="-20vw" y="2vw" />
-                <Skill name="RUST" x="20vw" y="6vw" />
+                <Skill name="Supervised ML" x="-32vw" y="2vw" />
+                <Skill name="Reinforcement Learning" x="28vw" y="-6vw" />
+                <Skill name="RUST" x="10vw" y="-17vw" />
+                <Skill name="ReactJS" x="-13vw" y="10vw" />
+                <Skill name="NextJS" x="-3vw" y="24vw" />
+                <Skill name="Web Scrapping" x="20vw" y="20vw" />
+                <Skill name="Solidity" x="-10vw" y="-22vw" />
+                <Skill name="Typescript" x="-20vw" y="-10vw" />
+                <Skill name="Web3" x="10vw" y="8vw" />
+                <Skill name="Chess" x="0vw" y="0vw" />
             </div>
         </>
     );

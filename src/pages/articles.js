@@ -46,7 +46,7 @@ const MovingImg = ({ title, img, link }) => {
 const FeatureArticle = ({ img, title, time, summary, link }) => {
     return (
         <li className='relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:bg-dark dark:border-light'>
-            <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl" />
+            <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light" />
             <Link href={link} target="_blank" className="w-1/2 inline-block cursor-pointer overflow-hidden rounded-lg">
                 <FramerImage
                     src={img}
@@ -96,50 +96,64 @@ const articles = () => {
             <TransitionEffect />
             <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
                 <Layout className='pt-16'>
-                    <Animated text="Placeholder" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl' />
+                    <Animated text="Topics of Interest" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl' />
                     <ul className='grid grid-cols-2 gap-16 md:grid-col-1 lg:gap-8 md:gap-y-16'>
                         <FeatureArticle
-                            title="Build A Custom Pagination Component In Reactjs From Scratch"
-                            summary="Learn how to build a custom pagination component in ReactJS from scratch. 
-                                        Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
-                            time="9 min read"
-                            link="/"
+                            title="ML-based Video Analytics Tool for Multimodal Emotion Recognition"
+                            summary="This paper presents a novel method for studying a candidate's nonverbal cues in an online interview setting. 
+                                    It discusses the need for such an application, previous research, databases used to train various models, 
+                                    the proposed method for aggregating results from modular components, and the computation of nonverbal metrics."
+                            time="20 min read"
+                            link="/docs/APAI3799.pdf"
                             img={article1}
                         />
                         <FeatureArticle
-                            title="Build A Custom Pagination Component In Reactjs From Scratch"
-                            summary="Learn how to build a custom pagination component in ReactJS from scratch. 
-                                        Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
-                            time="9 min read"
-                            link="/"
+                            title="Control an agent in LunarLander-v2 - an OpenAI gym environment"
+                            summary="This paper explores the implementations of various algorithms and their sub-variants, including their updating 
+                                    rules and experimental results. The algorithms discussed include Deep Q-Network (with and without experience replay), 
+                                    policy gradient (Monte Carlo policy gradient and proximal policy optimization), as well as SARSA."
+                            time="15 min read"
+                            link="/docs/COMP3340.pdf"
                             img={article1}
                         />
                     </ul>
-                    <h2 className='font-bold text-4xl w-full text-center my-16 mt-32'>All Articles</h2>
+                    <h2 className='font-bold text-4xl w-full text-center my-16 mt-32'>Featured Papers</h2>
                     <ul>
                         <Article
-                            title="xx"
+                            title="Time Series Analysis of CO2 Emissions in the U.S. : Stationarity, Model Fitting, Diagnostics"
                             img={article1}
-                            date="My 24, 2023"
-                            link="/"
+                            date="Dec 7th, 2022"
+                            link="/docs/STAT4601.pdf"
                         />
                         <Article
-                            title="xx"
+                            title="Modelling of Mortality Prediction and Length-of-Stay on the MIMIC-III database"
                             img={article1}
-                            date="My 24, 2023"
-                            link="/"
+                            date="Dec 7th, 2022"
+                            link="/docs/STAT3612.pdf"
                         />
                         <Article
-                            title="xx"
+                            title="A Statistical Marketing Study of Productivtiy Laptops: Clustering and Conjoint Analysis"
                             img={article1}
-                            date="My 24, 2023"
-                            link="/"
+                            date="Dec 3rd, 2022"
+                            link="/docs/STAT3613.pdf"
                         />
                         <Article
-                            title="xx"
+                            title="Severance and Buddhism: An Ethical Treatment"
                             img={article1}
-                            date="My 24, 2023"
-                            link="/"
+                            date="Apr 27th, 2023"
+                            link="/docs/BSTC2021.pdf"
+                        />
+                        <Article
+                            title="Analysis of the Concept of Mono-no-aware in Chapter Ten of the Tale of Genji"
+                            img={article1}
+                            date="Mar 13th, 2023"
+                            link="/docs/BSTC2003_2.pdf"
+                        />
+                        <Article
+                            title="The Influence of Zen Buddhism on Fashion Design"
+                            img={article1}
+                            date="May 15th, 2023"
+                            link="/docs/BSTC2003_1.pdf"
                         />
                     </ul>
                 </Layout>
